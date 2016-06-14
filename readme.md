@@ -29,7 +29,7 @@ Winston Chang & Aaron Artea
 - Players:
 	- 5-6
 - Customization:
-	- Mana (Splits) & Block/Set Backgrounds; Color Picker
+	- Mana (Splits) & Block/Set Backgrounds
 	- Life Counter additional orientation
 	- Take a picture to set as background; use photo library
 	- Dice shaker
@@ -55,9 +55,13 @@ Winston Chang & Aaron Artea
 	- 8000 (Normal) or 2000 (Anime) modes; user input - glorified calculator)
 - Set Default Game Start (MTG or Yu-Gi-Oh!)
 
+---
+
+###Wireframe / Mock
+<br>![Wireframe](rm/spindown_mock.gif "Spindown Mock Animated")
 
 <br>
-##Research Plan Worksheet
+###Research Plan Worksheet
 
 - 1) Research Title:
 	- All-encompassing Life Counter for Android.
@@ -78,3 +82,6 @@ Winston Chang & Aaron Artea
 - 10) 
 	- What makes MTG difficult for you?
 	- How would a free life tracking app be of use to you?
+
+###Competitive Analysis
+![Assessment](rm/competitiveAnalysis.png "Competitive Analysis")
