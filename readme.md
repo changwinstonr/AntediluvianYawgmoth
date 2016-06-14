@@ -1,11 +1,14 @@
-<img align="right" alt="Spindown" title="" src="rm/Spindown_117x100.png" height="90px">
+<img align="right" alt="Spindown" title="" src="rm/spindown_117x100.png" height="90px">
 #Spindown
 Winston Chang & Aaron Artea
 
 ---
+##Description
+Spindown starts as a life counter Android application for the "Magic the Gathering" TCG (tradable card game).  The Google Play store offers many applications with similar functionality, those that are free are feature light and lacked a great user experience. We aim to satisfy this void. 
+
 
 ##Features
-#####Planned (MVP)
+#####Planned (MVP - due to scope & time constraints)
 - Players:
 	- 1-4
 	- Change (initial) Life Totals: 20 | 30 | 40 (with corresponding selection toast)
@@ -22,7 +25,7 @@ Winston Chang & Aaron Artea
 	
 	
 
-##Stretch
+##Stretch Features / Future Updates
 ####MTG
 - Material Design:
 	- Animate. All. The. Things!
@@ -58,6 +61,11 @@ Winston Chang & Aaron Artea
 ---
 
 ###Wireframe / Mock
+1. View: Default
+1. Feature: Dice roll
+2. Feature: Player select (1,2,3,4)
+3. View: Settings
+4. Feature: Settings - Format selection (20,30,40,Custom)
 <br>![Wireframe](rm/spindown_mock.gif "Spindown Mock Animated")
 
 <br>
