@@ -15,14 +15,6 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".SinglePlayer">
-        </activity>
-        <activity android:name=".DoublePlayer">
-        </activity>
-        <activity android:name=".TriplePlayer">
-        </activity>
-        <activity android:name=".QuadPlayer">
-        </activity>
     </application>
 
 </manifest>
