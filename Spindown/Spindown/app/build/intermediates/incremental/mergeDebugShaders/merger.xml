@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\aaron\Desktop\project4\Spindown\Spindown\app\src\main\shaders"/></dataSet><dataSet config="debug"><source path="C:\Users\aaron\Desktop\project4\Spindown\Spindown\app\src\debug\shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="D:\Android\scratch-project4-spindown\Spindown\Spindown\app\src\main\shaders"/></dataSet><dataSet config="debug"><source path="D:\Android\scratch-project4-spindown\Spindown\Spindown\app\src\debug\shaders"/></dataSet></merger>
