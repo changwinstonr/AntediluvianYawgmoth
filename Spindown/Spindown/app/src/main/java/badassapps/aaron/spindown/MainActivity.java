@@ -7,12 +7,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     //Declare our variables
     Spinner mSpinner;
@@ -32,10 +35,13 @@ public class MainActivity extends AppCompatActivity {
             fragment = new LifeCounterFragment();
             fragmentManager.beginTransaction().add(R.id.fragmentHolder, fragment).commit();
         }
+
     }
 
+    //Create our  menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
+        //Inflate our spinner
         getMenuInflater().inflate(R.menu.menu_layout, menu);
         MenuItem item = menu.findItem(R.id.spinner);
 
@@ -44,7 +50,28 @@ public class MainActivity extends AppCompatActivity {
                 R.array.numberPlayer, android.R.layout.simple_spinner_item);
         mSpinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mSpinner.setAdapter(mSpinnerAdapter);
+        mSpinner.setOnItemSelectedListener(this);
 
         return true;
+    }
+
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        switch(position){
+            case 0:
+                Toast.makeText(MainActivity.this, "Select1", Toast.LENGTH_SHORT).show();
+                break;
+            case 1:
+                Toast.makeText(MainActivity.this, "Select2", Toast.LENGTH_SHORT).show();
+                break;
+            default:
+                Toast.makeText(MainActivity.this, "Default", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
     }
 }

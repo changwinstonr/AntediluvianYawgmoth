@@ -83,11 +83,6 @@ public class LifeCounterFragment extends Fragment {
             }
         });
 
-
-
         return view;
     }
-
-
-
 }
