@@ -92,16 +92,40 @@
         "source": "D:\\Android\\scratch-project4-spindown\\Spindown\\Spindown\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_search_view.xml"
     },
     {
+<<<<<<< HEAD
+        "merged": "C:\\Users\\aaron\\Desktop\\project4\\Spindown\\Spindown\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\aaron\\Desktop\\project4\\Spindown\\Spindown\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_popup_menu_item_layout.xml"
+||||||| merged common ancestors
+        "merged": "C:\\Users\\aaron\\Desktop\\project4\\Spindown\\Spindown\\app\\build\\intermediates\\res\\merged\\debug\\layout\\life_counter_fragment.xml",
+        "source": "C:\\Users\\aaron\\Desktop\\project4\\Spindown\\Spindown\\app\\src\\main\\res\\layout\\life_counter_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\aaron\\Desktop\\project4\\Spindown\\Spindown\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\aaron\\Desktop\\project4\\Spindown\\Spindown\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_popup_menu_item_layout.xml"
+=======
         "merged": "D:\\Android\\scratch-project4-spindown\\Spindown\\Spindown\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "D:\\Android\\scratch-project4-spindown\\Spindown\\Spindown\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
         "merged": "D:\\Android\\scratch-project4-spindown\\Spindown\\Spindown\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
         "source": "D:\\Android\\scratch-project4-spindown\\Spindown\\Spindown\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_list_menu_item_icon.xml"
+>>>>>>> upstream/master
     },
     {
+<<<<<<< HEAD
+        "merged": "C:\\Users\\aaron\\Desktop\\project4\\Spindown\\Spindown\\app\\build\\intermediates\\res\\merged\\debug\\layout\\life_counter_fragment.xml",
+        "source": "C:\\Users\\aaron\\Desktop\\project4\\Spindown\\Spindown\\app\\src\\main\\res\\layout\\life_counter_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\aaron\\Desktop\\project4\\Spindown\\Spindown\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\aaron\\Desktop\\project4\\Spindown\\Spindown\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_activity_chooser_view.xml"
+||||||| merged common ancestors
+        "merged": "C:\\Users\\aaron\\Desktop\\project4\\Spindown\\Spindown\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\aaron\\Desktop\\project4\\Spindown\\Spindown\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_activity_chooser_view.xml"
+=======
         "merged": "D:\\Android\\scratch-project4-spindown\\Spindown\\Spindown\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
         "source": "D:\\Android\\scratch-project4-spindown\\Spindown\\Spindown\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_list_menu_item_radio.xml"
+>>>>>>> upstream/master
     },
     {
         "merged": "D:\\Android\\scratch-project4-spindown\\Spindown\\Spindown\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
