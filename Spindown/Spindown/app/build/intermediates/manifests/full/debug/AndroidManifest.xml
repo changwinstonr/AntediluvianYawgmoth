@@ -21,14 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="badassapps.aaron.spindown.SinglePlayer" >
-        </activity>
-        <activity android:name="badassapps.aaron.spindown.DoublePlayer" >
-        </activity>
-        <activity android:name="badassapps.aaron.spindown.TriplePlayer" >
-        </activity>
-        <activity android:name="badassapps.aaron.spindown.QuadPlayer" >
-        </activity>
     </application>
 
 </manifest>
