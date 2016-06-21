@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,15 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="badassapps.aaron.spindown.LifeCounterFragment">
 
-    <TextView
-        android:layout_width="33dp"
-        android:layout_height="33dp"
-        android:hint="Text Please"
-        android:textSize="11dp"
-        android:id="@+id/textView"
-        android:layout_toLeftOf="@+id/topLeft"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
     <!--<TextView-->
         <!--android:layout_height="120dp"-->
         <!--android:layout_width="200dp"-->
@@ -37,27 +28,10 @@
         <!--android:id="@+id/topPlayerBottom"-->
         <!--android:layout_below="@+id/topLeft"-->
         <!--android:layout_centerHorizontal="true"/>-->
-    <Button
-        android:layout_height="60dp"
-        android:layout_width="110dp"
-        android:id="@+id/topLeft"
-        android:text="Left"
-        android:textAlignment="gravity"
-        android:background="#da5632"
-        android:layout_alignTop="@+id/textView"
-        android:layout_centerHorizontal="true"/>
-        <!--android:layout_alignLeft="@+id/topPlayerBottom"-->
+    <!--android:layout_alignLeft="@+id/topPlayerBottom"-->
         <!--android:layout_alignStart="@+id/topPlayerBottom"-->
 
-    <Button
-        android:layout_height="60dp"
-        android:layout_width="110dp"
-        android:text="Right"
-        android:background="#da5632"
-        android:id="@+id/topRight"
-        android:layout_below="@+id/topLeft"
-        android:layout_centerHorizontal="true"/>
-        <!--android:layout_alignBottom="@+id/topPlayerBottom"-->
+    <!--android:layout_alignBottom="@+id/topPlayerBottom"-->
 
     <!--Our bottom half-->
 
@@ -83,15 +57,7 @@
         <!--android:layout_alignStart="@+id/bottomLeft"-->
         <!--android:layout_alignBottom="@+id/bottomRight"-->
         <!--android:layout_below="@+id/bottomLeft"/>-->
-    <Button
-        android:layout_height="60dp"
-        android:layout_width="110dp"
-        android:id="@+id/bottomLeft"
-        android:text="Left"
-        android:background="#4573c7"
-        android:layout_below="@+id/topRight"
-        android:layout_centerHorizontal="true"/>
-        <!--android:visibility="invisible"-->
+    <!--android:visibility="invisible"-->
 
         <!--android:layout_below="@+id/topPlayerBottom"-->
         <!--android:layout_alignLeft="@+id/bottomRight"-->
@@ -101,13 +67,56 @@
     <Button
         android:layout_height="60dp"
         android:layout_width="110dp"
+        android:text="-"
+        android:background="#da5632"
+        android:id="@+id/topRight"
+        android:layout_below="@+id/topLeft"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="right|top" />
+
+    <Button
+        android:layout_height="60dp"
+        android:layout_width="110dp"
+        android:id="@+id/bottomLeft"
+        android:text="+"
         android:background="#4573c7"
-        android:text="Right"
+        android:layout_below="@+id/topRight"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="left|bottom" />
+
+    <Button
+        android:layout_height="60dp"
+        android:layout_width="110dp"
+        android:background="#4573c7"
+        android:text="-"
         android:id="@+id/bottomRight"
         android:layout_below="@+id/bottomLeft"
-        android:layout_centerHorizontal="true"/>
-        <!--android:visibility="invisible"-->
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="right|bottom" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:hint=""
+        android:textSize="50dp"
+        android:id="@+id/textView"
+        android:layout_toLeftOf="@+id/topLeft"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal|top" />
+
+    <Button
+        android:layout_height="60dp"
+        android:layout_width="110dp"
+        android:id="@+id/topLeft"
+        android:text="+"
+        android:textAlignment="gravity"
+        android:background="#da5632"
+        android:layout_alignTop="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="left|top" />
+    <!--android:visibility="invisible"-->
 
         <!--android:layout_alignLeft="@+id/topPlayerBottom"/>-->
 
-</RelativeLayout>
+</FrameLayout>

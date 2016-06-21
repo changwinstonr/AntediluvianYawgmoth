@@ -1,6 +1,7 @@
 package badassapps.aaron.spindown;
 
 import android.app.Fragment;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -30,12 +31,19 @@ public class LifeCounterFragment extends Fragment {
             savedInstanceState) {
         View view = inflater.inflate(R.layout.life_counter_fragment, container, false);
 
-
+//      Left: + | Right: -
         getBottomRight = (Button) view.findViewById(R.id.bottomRight);
         getBottomLeft = (Button) view.findViewById(R.id.bottomLeft);
         getTopRight = (Button) view.findViewById(R.id.topRight);
         getTopLeft = (Button) view.findViewById(R.id.topLeft);
         tv = (TextView) view.findViewById(R.id.textView);
+
+        Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "YouRookMarbelous.ttf");
+        getBottomRight.setTypeface(tf);
+        getBottomLeft.setTypeface(tf);
+        getTopRight.setTypeface(tf);
+        getTopLeft.setTypeface(tf);
+        tv.setTypeface(tf);
 
 //        getTopPlayerTop = (TextView) view.findViewById(R.id.topPlayerTop);
 //        getTopPlayerBottom = (TextView) view.findViewById(R.id.topPlayerBottom);
