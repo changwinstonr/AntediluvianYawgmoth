@@ -2,39 +2,31 @@ package badassapps.aaron.spindown;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.os.Bundle;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     //Declare our variables
     Spinner mSpinner;
     ArrayAdapter<CharSequence> mSpinnerAdapter;
+    FragmentManager fragmentManager;
+    Fragment fragment, fragmentTwo, fragmentThree, fragmentFour;
+    LinearLayout linearLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        //Fragment Mgr.
-        FragmentManager fragmentManager = getFragmentManager();
-
-        Fragment fragment = fragmentManager.findFragmentById(R.id.fragmentHolder);
-
-        if (fragment == null) {
-            fragment = new LifeCounterFragment();
-            fragmentManager.beginTransaction().add(R.id.fragmentHolder, fragment).commit();
-        }
 
     }
 
@@ -58,15 +50,41 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        fragmentManager = getFragmentManager();
+        fragment = fragmentManager.findFragmentById(R.id.fragmentHolder);
+        linearLayout = (LinearLayout) findViewById(R.id.life_counter);
+        LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) linearLayout
+                .getLayoutParams();
         switch(position){
             case 0:
-                Toast.makeText(MainActivity.this, "Select1", Toast.LENGTH_SHORT).show();
+                //Fragment Mgr.
+                if (fragment == null) {
+                    fragment = new LifeCounterFragment();
+                    fragmentManager.beginTransaction().add(R.id.fragmentHolder, fragment).commit();
+                }
+
+                Toast.makeText(MainActivity.this, "One Player", Toast.LENGTH_SHORT).show();
+
                 break;
             case 1:
-                Toast.makeText(MainActivity.this, "Select2", Toast.LENGTH_SHORT).show();
+                fragmentTwo = new LifeCounterFragment();
+                params.weight = 3.0f;
+                linearLayout.setLayoutParams(params);
+                fragmentManager.beginTransaction().add(R.id.fragmentHolder,fragmentTwo).commit();
+
+                Toast.makeText(MainActivity.this, "Two Players", Toast.LENGTH_SHORT).show();
                 break;
+
+            case 2:
+
+                Toast.makeText(MainActivity.this, "Three Players", Toast.LENGTH_SHORT).show();
+                break;
+            case 3:
+                Toast.makeText(MainActivity.this, "Four Players", Toast.LENGTH_SHORT).show();
+                break;
+
             default:
-                Toast.makeText(MainActivity.this, "Default", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "No Players..?", Toast.LENGTH_SHORT).show();
         }
     }
 

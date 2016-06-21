@@ -1636,8 +1636,6 @@ containing a value of this type.
         public static final int alertTitle=0x7f0d0030;
         public static final int always=0x7f0d001c;
         public static final int beginning=0x7f0d0019;
-        public static final int bottomLeft=0x7f0d0054;
-        public static final int bottomRight=0x7f0d0055;
         public static final int buttonPanel=0x7f0d002b;
         public static final int cancel_action=0x7f0d0057;
         public static final int checkbox=0x7f0d0039;
@@ -1661,6 +1659,8 @@ containing a value of this type.
         public static final int ifRoom=0x7f0d001e;
         public static final int image=0x7f0d0026;
         public static final int info=0x7f0d0061;
+        public static final int left=0x7f0d0054;
+        public static final int life_counter=0x7f0d0051;
         public static final int line1=0x7f0d005b;
         public static final int line3=0x7f0d005f;
         public static final int listMode=0x7f0d0009;
@@ -1675,6 +1675,7 @@ containing a value of this type.
         public static final int progress_circular=0x7f0d0005;
         public static final int progress_horizontal=0x7f0d0006;
         public static final int radio=0x7f0d003b;
+        public static final int right=0x7f0d0055;
         public static final int screen=0x7f0d0015;
         public static final int scrollIndicatorDown=0x7f0d0035;
         public static final int scrollIndicatorUp=0x7f0d0032;
@@ -1706,13 +1707,12 @@ containing a value of this type.
         public static final int text=0x7f0d0060;
         public static final int text2=0x7f0d005e;
         public static final int textSpacerNoButtons=0x7f0d0034;
-        public static final int textView=0x7f0d0051;
+        public static final int textView=0x7f0d0052;
         public static final int time=0x7f0d005c;
         public static final int title=0x7f0d002a;
         public static final int title_template=0x7f0d002f;
-        public static final int topLeft=0x7f0d0052;
+        public static final int topLeft=0x7f0d0053;
         public static final int topPanel=0x7f0d002e;
-        public static final int topRight=0x7f0d0053;
         public static final int up=0x7f0d0008;
         public static final int useLogo=0x7f0d0012;
         public static final int withText=0x7f0d0020;
